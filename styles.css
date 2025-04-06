@@ -1,0 +1,152 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e9ecef;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  h1 {
+    color: #0056b3;
+    text-align: center;
+  }
+  .input-group {
+    margin-bottom: 20px;
+  }
+  label {
+    display: inline-block;
+    width: 160px;
+    font-weight: bold;
+    color: #495057;
+  }
+  input[type="number"] {
+    width: 100px;
+    padding: 8px;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+  }
+  button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+  }
+  th, td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: left;
+  }
+  th {
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+  #ganttChart {
+    margin-top: 40px;
+    position: relative;
+    padding: 20px 0;
+  }
+  .cpu-row {
+    height: 50px;
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .job-block {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .idle-block {
+    background-color: #f8f9fa;
+  }
+  .time-axis {
+    position: relative;
+    height: 60px;
+    margin-top: 50px;
+    border-top: 3px solid #343a40;
+  }
+  .time-marker {
+    position: absolute;
+    font-size: 14px;
+    top: -25px;
+    text-align: center;
+  }
+  .dashed-line {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: #adb5bd;
+    border-left: 1px dashed #6c757d;
+    top: 0;
+  }
+  .arrival-line {
+    position: absolute;
+    height: 100%;
+    width: 0.5px;
+    background-color: #e9ecef;
+    border-left: 1px dashed #6c757d;
+    top: 0;
+  }
+  #averageTurnaroundTime {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .queue-container {
+    position: absolute;
+    font-size: 14px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #6c757d;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 10;
+    font-weight: bold;
+  }
+  .queue-jobs {
+    font-style: italic;
+  }
+  .job-arrival {
+    position: absolute;
+    font-size: 12px;
+    text-align: center;
+    top: -20px;
+  }
+  .job-arrival-name {
+    position: absolute;
+    font-size: 12px;
+    text-align: center;
+    top: -35px;
+    font-weight: bold;
+  }
+  #ganttChartContainer {
+    position: relative;
+    overflow-x: auto;
+    padding-bottom: 100px;
+  }
+  
